@@ -1,0 +1,7 @@
+[build]
+target = "x86_64-bare-metal.json"
+
+[target.x86_64-bare-metal]
+rustflags = [
+    "-C", "link-arg=-Tlinker.ld"
+]
